@@ -1,0 +1,27 @@
+library(MASS)
+library(ISLR)
+fix(Boston)
+names(Boston)
+lm.fit = lm(medv ~lstat, data=Boston)
+names(lm.fit)
+
+predict(lm.fit, data.frame(lstat = c(5,10,15)), interval="confidence")
+par(mfrow = c(2,2))
+plot(lm.fit)
+plot(predict(lm.fit), residuals(lm.fit))
+plot(predict(lm.fit), rstudent(lm.fit))
+plot(hatvalues(lm.fit))
+
+lm.fit = lm(medv ~ lstat + age, data=Boston)
+plot(predict(lm.fit), residuals(lm.fit))
+
+lm.fit = lm(medv ~., data=Boston)
+lm.fit = lm(medv ~. -age, data=Boston)
+lm.fit = lm(medv ~lstat * age, data=Boston)
+lm.fit = lm(medv ~ lstat + I(lstat ^ 2))
+lm.fit2 = lm(medv ~ lstat)
+lm.fit5 = lm(medv ~ poly(lstat, 5))
+anova(lm.fit, lm.fit2)
+
+names(Carseats)
+lm.fit = lm(Sales ~. + Income:Advertising + Price:Age, data=Carseats)
