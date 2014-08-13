@@ -1,3 +1,10 @@
+/*************************************************************************************/
+/* The file implementing Priority Queue according to the recipe in Algorithms course 
+/* in Princeton
+/* Author: Zhongcun Wang
+/* Date  : Augugst 13th, 2014 
+/*********************************************************************************************/
+
 #ifndef __PRIORITY_QUEUE_H
 #define __PRIORITY_QUEUE_H
 
