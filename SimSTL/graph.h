@@ -1,3 +1,10 @@
+/********************************************************************************************/
+/* The file implementing Graph according to the recipe in Algorithms course 
+/* in Princeton
+/* Author: Zhongcun Wang
+/* Date  : Augugst 12th, 2014 
+/*********************************************************************************************/
+
 #ifndef __GRAPH_H
 #define __GRAPH_H
 

@@ -1,3 +1,10 @@
+/********************************************************************************************/
+/* The file implementing 2d tree according to the recipe in Algorithms course 
+/* in Princeton
+/* Author: Zhongcun Wang
+/* Date  : Augugst 12th, 2014 
+/*********************************************************************************************/
+
 #ifndef __2D_TREE_H
 #define __2D_TREE_H
 #include <cmath>

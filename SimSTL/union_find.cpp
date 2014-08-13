@@ -1,3 +1,10 @@
+/********************************************************************************************/
+/* The file implementing Union Find according to the recipe in Algorithms course 
+/* in Princeton
+/* Author: Zhongcun Wang
+/* Date  : Augugst 12th, 2014 
+/*********************************************************************************************/
+
 #include <iostream>
 
 using namespace std;

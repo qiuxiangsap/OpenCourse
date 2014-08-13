@@ -1,3 +1,10 @@
+/********************************************************************************************/
+/* The file implementing Dijkstra according to the recipe in Algorithms course 
+/* in Princeton
+/* Author: Zhongcun Wang
+/* Date  : Augugst 12th, 2014 
+/*********************************************************************************************/
+
 #ifndef __DIJKSTRA_H
 #define __DIJKSTRA_H
 

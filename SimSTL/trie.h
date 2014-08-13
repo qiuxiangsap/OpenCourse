@@ -1,3 +1,10 @@
+/********************************************************************************************/
+/* The file implementing Trie according to the recipe in Algorithms course 
+/* in Princeton
+/* Author: Zhongcun Wang
+/* Date  : Augugst 12th, 2014 
+/*********************************************************************************************/
+
 #ifndef __TRIE_H
 #define  __TRIE_H
 

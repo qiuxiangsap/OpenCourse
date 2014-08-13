@@ -1,3 +1,10 @@
+/********************************************************************************************/
+/* The file implementing the Index Min Queue according to the recipe in Algorithms course 
+/* in Princeton
+/* Author: Zhongcun Wang
+/* Date  : Augugst 13th, 2014 
+/*********************************************************************************************/
+
 #ifndef __INDEX_QUEUE_H
 #define __INDEX_QUEUE_H
 

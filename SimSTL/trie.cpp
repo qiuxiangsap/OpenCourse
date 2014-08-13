@@ -1,3 +1,10 @@
+/********************************************************************************************/
+/* The file implementing test client code for Trie
+/* 
+/* Author: Zhongcun Wang
+/* Date  : Augugst 12th, 2014 
+/*********************************************************************************************/
+
 #include "trie.h"
 #include <iostream>
 #include <string>

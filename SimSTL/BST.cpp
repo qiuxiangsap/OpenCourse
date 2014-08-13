@@ -1,3 +1,10 @@
+/********************************************************************************************/
+/* This is the test client for BST implementation
+/* in Princeton
+/* Author: Zhongcun Wang
+/* Date  : Augugst 5th, 2014 
+/*********************************************************************************************/
+
 #include <iostream>
 #include <algorithm>
 #include <iterator>

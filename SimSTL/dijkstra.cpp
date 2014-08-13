@@ -1,3 +1,10 @@
+/********************************************************************************************/
+/* This is the test client for Dijkstra Algorithm
+/* in Princeton
+/* Author: Zhongcun Wang
+/* Date  : Augugst 12th, 2014 
+/*********************************************************************************************/
+
 #include "dijkstra.h"
 #include "graph.h"
 #include <string>

@@ -1,3 +1,10 @@
+/********************************************************************************************/
+/* The file implementing KMP algorithm according to the recipe in Algorithms course 
+/* in Princeton
+/* Author: Zhongcun Wang
+/* Date  : Augugst 12th, 2014 
+/*********************************************************************************************/
+
 #ifndef __KMP_H
 #define __KMP_H
 
