@@ -13,14 +13,16 @@ using namespace std;
 
 namespace Algorithm {
 
+
 	template <class T>
 	class Stack {
+
 	public:
 		Stack();
 		~Stack();
 
 		void push(const T& elem);
-		int pop();
+		T pop();
 		bool empty();
 		int size();
 
@@ -30,6 +32,8 @@ namespace Algorithm {
 			Node *next;
 			Node(){}
 		};
+
+
 		Node *head;
 		int sz;
 	};
@@ -65,12 +69,12 @@ namespace Algorithm {
 	}
 
 	template <class T>
-	int Stack<T>::pop() {
+	T Stack<T>::pop() {
 		if (this->empty()) {
 			throw "Empty Stack";
 		}
 
-		int el = head->elem;
+		T el = head->elem;
 		head = head->next;
 		sz--;
 		return el;
@@ -88,7 +92,7 @@ namespace Algorithm {
 #endif
 
 int main(int argc, char*argv[])  {
-	Stack<int> *s = new Stack<int>();
+	Algorithm::Stack<int> *s = new Algorithm::Stack<int>();
 	s->push(10);
 	s->push(9);
 	s->push(8);
