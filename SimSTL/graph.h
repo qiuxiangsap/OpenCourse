@@ -40,7 +40,7 @@ namespace Algorithm{
 			ifstream in(file_name.c_str());
 
 			if (!in) {
-				cout << "Open file " << file_name << " Failed\n";
+				cout << "Open file " << file_name.c_str() << " Failed\n";
 			}
 			in >> v;
 			string line;
