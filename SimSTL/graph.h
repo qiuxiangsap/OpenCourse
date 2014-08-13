@@ -14,6 +14,8 @@
 #include <iostream>
 #include <stdexcept>
 #include <string>
+#include <algorithm>
+#include <iterator>
 
 using namespace std;
 
@@ -26,6 +28,17 @@ namespace Algorithm{
 	public:
 		UDGraph(int n):n(n) {
 
+		}
+
+		UDGraph( UDGraph &ud) {
+			n = ud.v();
+
+			for (int i = 0; i < n; i++) {
+				vector<int> * nebors = ud.adj(i);
+				vector<int> * same = new vector<int>();
+				copy(nebors->begin(), nebors->end(), back_inserter(*same));
+				adj_list.insert(pair<int, vector<int> * >(i, same));
+			}
 		}
 
 		UDGraph(const string &file_name) {

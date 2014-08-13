@@ -1,5 +1,4 @@
-/*******
-*************************************************************************************/
+/*************************************************************************************/
 /* The file implementing Bellman Ford according to the recipe in Algorithms course 
 /* in Princeton
 /* Author: Zhongcun Wang

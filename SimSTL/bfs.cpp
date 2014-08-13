@@ -1,3 +1,10 @@
+/********************************************************************************************/
+/* The file implementing the test client code for BFS 
+/* 
+/* Author: Zhongcun Wang
+/* Date  : Augugst 13th, 2014 
+/*********************************************************************************************/
+
 #include "bfs.h"
 #include "graph.h"
 #include <iostream>
