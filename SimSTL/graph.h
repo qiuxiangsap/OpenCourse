@@ -13,10 +13,60 @@
 #include <fstream>
 #include <iostream>
 #include <stdexcept>
+#include <string>
 
 using namespace std;
 
 namespace Algorithm{
+
+	struct UDGraph {
+	private:
+		int n;
+		map<int, vector<int> * > adj_list;
+	public:
+		UDGraph(int n):n(n) {
+
+		}
+
+		UDGraph(const string &file_name) {
+			ifstream in(file_name.c_str());
+
+			if (!in) {
+				cerr << file_name.c_str() << " Doesn't Exist!" << endl;
+				exit(1);
+			}
+
+			in >> n;
+			while( in.good() ) {
+				int f, t;
+				in >> f >> t;
+				add_edge(f, t);
+				add_edge(t, f);
+			}
+		}
+
+		void add_edge(int v, int w) {
+			map<int, vector<int> * >::iterator itr = adj_list.find(v);
+
+			if (itr != adj_list.end()) {
+				itr->second->push_back(w);
+			} else {
+				vector<int> *vec = new vector<int>();
+				vec->push_back(w);
+				adj_list.insert(pair<int, vector<int> *>(v, vec));
+			}
+		}
+
+		vector<int> *adj(int v) {
+			return adj_list[v];
+		}
+
+		int v() {
+			return n;
+		}
+	};
+
+
 
 	struct DirectedEdge{
 		int from;
